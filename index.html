@@ -25,10 +25,88 @@
 
   <body>
     <div class="page">
-      <header class="header"></header>
+      <header class="header">
+        <img
+          src="./images/logo_coffeeshop_dark.svg"
+          alt="Logotipo Triple Espresso"
+          class="header__logo"
+        />
+
+        <nav class="header__nav">
+          <ul class="header__nav-links">
+            <li><a href="#recipes" class="header__nav-link">Receitas</a></li>
+            <li>
+              <a href="#reservation" class="header__nav-link"
+                >Reservar uma mesa</a
+              >
+            </li>
+            <li><a href="#contacts" class="header__nav-link">Contatos</a></li>
+          </ul>
+        </nav>
+
+        <h1 class="header__title">
+          <span class="header__span-accent">Café especial</span>
+          <span class="header__title-line-two">na biblioteca Triple Peaks</span>
+        </h1>
+        <p class="header__description">
+          Esta é nossa zona de estudo! Temos aquele cafezinho para energizar
+          você e vibrações aconchegantes para soltar a criatividade.
+        </p>
+
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Ilustração de um escritório"
+          class="header__image"
+        />
+
+        <div class="header__footer">
+          <div class="header__paragraphs">
+            <p class="header__paragraph">Horários:</p>
+            <p class="header__paragraph">Segunda a sexta (10:00 – 19:00)</p>
+            <p class="header__paragraph">Sábado a domingo (11:00 - 18:00)</p>
+          </div>
+          <p class="header__paragraph">
+            200 Success Avenue, a cidade de Triple Peaks
+          </p>
+        </div>
+      </header>
+
       <main class="content">
-        <section class="recipes"></section>
-        <section class="reservation"></section>
+        <section class="recipes" id="recipes">
+          <h2 class="recipes__title">Receitas</h2>
+          <p class="recipes__subtitle">
+            Confira algumas receitas que coletamos para seu lanchinho caseiro:
+          </p>
+          <div class="recipes__videos">
+            <div class="recipes__video-item">
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/OgL9qKoF3u8?si=ncgpDIhrC9EwhIqW"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__video-caption">
+                Receita Aeropress
+                <span class="recipes__video-duration">~2:40 min</span>
+              </p>
+            </div>
+
+            <div class="recipes__video-item">
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/st571DYYTR8"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__video-caption">
+                Receita de Prensa Francesa
+                <span class="recipes__video-duration">~15 min</span>
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer class="footer"></footer>
