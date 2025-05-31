@@ -106,7 +106,83 @@
           </div>
         </section>
 
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar uma mesa</h2>
+          <form class="reservation__form">
+            <div class="reservation__form-field">
+              <label for="name" class="reservation__label">Nome *</label>
+              <input
+                type="text"
+                class="reservation__input"
+                id="name"
+                name="name"
+                placeholder="Nome"
+                required
+              />
+            </div>
+
+            <div class="reservation__form-field">
+              <label for="guests" class="reservation__label"
+                >Número de convidados *</label
+              >
+              <input
+                type="number"
+                class="reservation__input"
+                id="guests"
+                name="guests"
+                placeholder="1-8"
+                required
+                min="1"
+                max="8"
+              />
+            </div>
+
+            <div class="reservation__form-field">
+              <label for="date-time" class="reservation__label"
+                >Data e hora *</label
+              >
+              <input
+                type="datetime-local"
+                class="reservation__input"
+                id="date-time"
+                name="date-time"
+                required
+              />
+            </div>
+
+            <div class="reservation__form-field">
+              <label for="email" class="reservation__label">Seu e-mail *</label>
+              <input
+                type="email"
+                class="reservation__input"
+                id="email"
+                name="email"
+                placeholder="email@email.com"
+                required
+              />
+            </div>
+
+            <button type="submit" class="reservation__button">
+              Reservar uma mesa
+            </button>
+
+            <div class="reservation__checkbox-container">
+              <label
+                class="reservation__label reservation__label_type_checkbox"
+              >
+                <input
+                  type="checkbox"
+                  class="reservation__checkbox"
+                  id="terms"
+                  name="terms"
+                  value="agreed"
+                  required
+                />
+                Eu concordo com os termos de uso
+              </label>
+            </div>
+          </form>
+        </section>
       </main>
       <footer class="footer" id="footer"></footer>
     </div>
